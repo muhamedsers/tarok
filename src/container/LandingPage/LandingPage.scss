@@ -1,0 +1,49 @@
+@import "../../App.scss";
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+
+  .title {
+    color: white;
+    font-size: 48px;
+    margin-top: 6%;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    height: 20rem;
+    width: 100%;
+    background-color: $accentColor;
+    // background-image: url(); Background image with the project  theme
+    // background-repeat: no-repeat;
+  }
+  .articleContainer {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    color: white;
+    font-size: 24px;
+    width: 100rem;
+    text-align: center;
+  }
+  .buttonContainer {
+    display: flex;
+    gap: 1rem;
+
+    button {
+      background-color: $accentColor;
+      border-radius: 8px;
+      width: 15rem;
+      height: 10rem;
+      font-size: 24px;
+      transition: all ease-in-out 0.2s;
+    }
+    button:hover {
+      opacity: 85%;
+      transform: scale(1.05);
+    }
+  }
+}

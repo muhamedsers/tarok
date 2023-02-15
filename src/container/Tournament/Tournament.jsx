@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { supabase } from "../../supabaseClient";
 import "../AddPlayer/AddPlayer.scss";
+import { useNavigate } from "react-router";
 
 const Tournament = () => {
   const [name, setName] = useState("");
@@ -21,7 +22,7 @@ const Tournament = () => {
     ]);
     console.log(response);
   };
-
+  const navigate = useNavigate();
   return (
     <div className="formCenter">
       <h1 className="title">Ustvarjanje turnirja</h1>
@@ -68,7 +69,7 @@ const Tournament = () => {
             type="button"
             value="Ustvari Turnir"
             onClick={() => {
-              insertDataIntoTable();
+              insertDataIntoTable(), navigate("/add-player");
             }}
           />
         </div>
