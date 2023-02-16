@@ -74,7 +74,7 @@ const Tournament = () => {
             value="Ustvari Turnir"
             onClick={() => {
               insertDataIntoTable();
-              navigate("/add-player");
+              navigate("/");
               set;
             }}
           />

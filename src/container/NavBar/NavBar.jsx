@@ -34,7 +34,7 @@ const NavBar = () => {
           Dokumentacija
         </button>
         <button>
-          <a href="https://github.com/muhamedsers/tarok" target="blank">
+          <a href="https://github.com/dusanSERS/projektTarok" target="blank">
             GitHub
           </a>
         </button>

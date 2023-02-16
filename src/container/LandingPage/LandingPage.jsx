@@ -5,6 +5,7 @@ import "../Tournament/Tournament";
 import { useNavigate } from "react-router";
 import NavBar from "../NavBar/NavBar";
 import Footer from "../Footer/Footer";
+import tarok from "../../assets/tarok_slika.jpg";
 
 const LandingPage = () => {
   const navigate = useNavigate();
@@ -15,12 +16,17 @@ const LandingPage = () => {
         <NavBar />
       </header>
       <div className="articleContainer">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-        magnam eos repudiandae repellendus cum expedita dolor corrupti iure.
-        Eligendi praesentium qui dicta architecto repellat ipsa fugit,
-        consequatur ipsum saepe nulla? Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Accusamus, fugiat. Id qui quisquam rerum voluptatibus
-        veniam rem reiciendis aliquam?
+        To je šolski projekt ki ga delamo za raziskovalno nalogo, gre se namreč
+        za program v pytonu ki s pomočjo knjižnice tenssorflow prepozna karte za
+        tarok in zvok, tako bo program pri igranju sam vpisoval podatke igre ki
+        jih potrebujete za igro taroka, to je pa forntend projekta ki je še
+        vedno v razvoju.
+        <a href="https://sl.wikipedia.org/wiki/Tarok" target="blank">
+          <img src={tarok} alt="" />
+        </a>
+      </div>
+      <div className="conceptContainer">
+        <h1 className="title2">Prof of Concept</h1>
       </div>
       <div className="buttonContainer">
         <button
