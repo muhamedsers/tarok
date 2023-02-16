@@ -19,13 +19,23 @@ const ChoosePlayers = () => {
       position: toast.POSITION.BOTTOM_LEFT,
     });
 
-  async function getCountries() {
+  async function getAvailablePlayers() {
     const availablePlayersDatabase = await supabase.from("igralec").select();
     setAvailablePlayers(availablePlayersDatabase.data);
   }
 
+  const insertDataIntoTable = () => {
+    chosenPlayers.forEach(async (e) => {
+      const response = await supabase.from("izbrani_igralci").insert([
+        {
+          ime: e.ime,
+        },
+      ]);
+    });
+  };
+
   useEffect(() => {
-    getCountries();
+    getAvailablePlayers();
   }, []);
 
   return (
@@ -102,7 +112,15 @@ const ChoosePlayers = () => {
               })}
             </div>
           </div>
-          <button className="ctaButton primary">Next</button>
+          <button
+            className="ctaButton primary"
+            onClick={() => {
+              insertDataIntoTable();
+              navigate("/tournament");
+            }}
+          >
+            Next
+          </button>
         </div>
       </div>
       <ToastContainer />
