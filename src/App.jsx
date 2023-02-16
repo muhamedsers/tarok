@@ -12,7 +12,7 @@ function App() {
         <Routes>
           <Route path="/add-player" element={<AddPlayer />} />
           <Route path="/tournament" element={<Tournament />} />
-          <Route path="/choose-players" element={<ChoosePlayers />} />
+          <Route path="/chose-players" element={<ChoosePlayers />} />
           <Route path="/" element={<LandingPage />} />
         </Routes>
       </BrowserRouter>

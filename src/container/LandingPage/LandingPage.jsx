@@ -4,6 +4,7 @@ import "./LandingPage.scss";
 import "../Tournament/Tournament";
 import { useNavigate } from "react-router";
 import NavBar from "../NavBar/NavBar";
+import Footer from "../Footer/Footer";
 
 const LandingPage = () => {
   const navigate = useNavigate();
@@ -19,15 +20,7 @@ const LandingPage = () => {
         Eligendi praesentium qui dicta architecto repellat ipsa fugit,
         consequatur ipsum saepe nulla? Lorem ipsum dolor sit amet consectetur
         adipisicing elit. Accusamus, fugiat. Id qui quisquam rerum voluptatibus
-        veniam rem reiciendis aliquam? Eveniet sequi sapiente accusamus quo
-        facere alias, quod reprehenderit quibusdam saepe. Lorem ipsum dolor sit
-        amet consectetur adipisicing elit. Et quisquam incidunt vel voluptatum
-        tempore, quam necessitatibus tempora adipisci ut recusandae, facilis,
-        quis voluptates assumenda consectetur magnam error. Architecto, laborum
-        assumenda! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Beatae facere eum illo consectetur facilis, praesentium iste natus quam
-        et laborum ullam, atque veniam perferendis voluptatum pariatur fugit
-        repellendus quaerat obcaecati.
+        veniam rem reiciendis aliquam?
       </div>
       <div className="buttonContainer">
         <button
@@ -45,6 +38,9 @@ const LandingPage = () => {
           Nadaljuj Turnir
         </button>
       </div>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };

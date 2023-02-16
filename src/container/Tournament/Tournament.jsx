@@ -69,7 +69,7 @@ const Tournament = () => {
             type="button"
             value="Ustvari Turnir"
             onClick={() => {
-              insertDataIntoTable(), navigate("/add-player");
+              insertDataIntoTable(), navigate("/chose-players");
             }}
           />
         </div>
