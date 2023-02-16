@@ -1,0 +1,49 @@
+@import "../../App.scss";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+.NavContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  align-items: center;
+  .NavLeft {
+    display: flex;
+    gap: 1rem;
+    .title {
+      color: white;
+      font-size: 38px;
+    }
+    img {
+      margin-left: 2rem;
+      width: 6rem;
+      height: 6rem;
+    }
+    align-items: center;
+  }
+  .NavRight {
+    display: flex;
+    align-items: center;
+    margin-right: 4rem;
+    gap: 1rem;
+    button {
+      font-family: "Lato", sans-serif;
+      background: none;
+      color: white;
+      border: none;
+      font-size: 18px;
+      transition: all ease-in-out 0.2s;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      a:hover {
+        color: $accentColor;
+        cursor: pointer;
+      }
+    }
+    button:hover {
+      color: $accentColor;
+      cursor: pointer;
+    }
+  }
+}

@@ -7,17 +7,13 @@
   height: 100%;
   align-items: center;
 
-  .title {
-    color: white;
-    font-size: 48px;
-    margin-top: 6%;
-  }
   header {
     display: flex;
-    justify-content: center;
-    height: 20rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: 7rem;
     width: 100%;
-    background-color: $accentColor;
+
     // background-image: url(); Background image with the project  theme
     // background-repeat: no-repeat;
   }

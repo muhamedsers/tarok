@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./LandingPage.scss";
 import "../Tournament/Tournament";
 import { useNavigate } from "react-router";
+import NavBar from "../NavBar/NavBar";
 
 const LandingPage = () => {
   const navigate = useNavigate();
@@ -10,7 +11,7 @@ const LandingPage = () => {
   return (
     <div className="mainContainer">
       <header>
-        <h1 className="title">Projekt Tarok</h1>
+        <NavBar />
       </header>
       <div className="articleContainer">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
