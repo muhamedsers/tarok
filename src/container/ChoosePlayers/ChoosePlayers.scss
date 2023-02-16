@@ -1,0 +1,148 @@
+@import "../../App.scss";
+$buttonGreen: #00ae60;
+$buttonRed: #bc0000;
+
+.center {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .playersParentContainer {
+    display: flex;
+    gap: 2rem;
+    height: 70%;
+
+    .buttonContainer {
+      margin-bottom: 3rem;
+      .ctaButton {
+        width: 100%;
+        height: 3rem;
+        margin-top: 1rem;
+        border-radius: 8px;
+        color: white;
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        transition: all ease-in-out 0.2s;
+        cursor: pointer;
+      }
+
+      .ctaButton:hover {
+        transform: scale(1.01);
+        opacity: 85%;
+      }
+
+      .secondary {
+        border: 1px solid $accentColor;
+        background: none;
+      }
+
+      .primary {
+        border: none;
+        background: $accentColor;
+        color: $bgColor;
+      }
+    }
+
+    .playersContainer {
+      min-width: 35rem;
+      min-height: 20rem;
+      height: 100%;
+      border: 1px solid $accentColor;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
+      .players::-webkit-scrollbar {
+        display: none;
+      }
+
+      .players {
+        width: 90%;
+        overflow: scroll;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h1 {
+        text-align: center;
+        color: white;
+      }
+
+      .singlePlayer {
+        width: 90%;
+        height: 3rem;
+        background-color: $accentColor;
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h3 {
+          margin-left: 1rem;
+          color: $bgColor;
+        }
+
+        .playerButton {
+          height: 60%;
+          width: 3rem;
+          border-radius: 8px;
+          border: none;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          margin-right: 1rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: all ease-in-out 0.2s;
+          cursor: pointer;
+
+          .icon {
+            width: 10px;
+          }
+        }
+
+        .playerButton:hover {
+          transform: scale(1.05);
+        }
+
+        .removeButton {
+          background-color: $buttonRed;
+        }
+
+        .addButton {
+          background-color: $buttonGreen;
+
+          .icon {
+            width: 18px;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 1200px) {
+      .playersContainer {
+        min-width: 25rem;
+      }
+    }
+    @media only screen and (max-width: 850px) {
+      .playersContainer {
+        min-width: 20rem;
+      }
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    .playersParentContainer {
+      flex-direction: column;
+
+      .playersContainer {
+        min-height: 30rem;
+      }
+    }
+  }
+}
