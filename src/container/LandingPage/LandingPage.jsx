@@ -32,7 +32,7 @@ const LandingPage = () => {
       <div className="buttonContainer">
         <button
           onClick={() => {
-            navigate("/tournament");
+            navigate("/choose-players");
           }}
         >
           Kreiraj Turnir
