@@ -2,12 +2,15 @@ import React from "react";
 import "./AddPlayer.scss";
 import { useState } from "react";
 import { supabase } from "../../supabaseClient";
+import { useNavigate } from "react-router";
 
 const AddPlayer = () => {
   const [name, setName] = useState("");
   const [lastname, setLastname] = useState("");
   const [nickname, setNickname] = useState("");
   const [date, setDate] = useState("");
+
+  const navigate = useNavigate();
 
   /*
   Inserts data in to table igralec
@@ -71,6 +74,7 @@ const AddPlayer = () => {
           value="Dodaj Igralca"
           onClick={() => {
             insertDataIntoTable();
+            navigate("/choose-players");
           }}
         />
       </form>

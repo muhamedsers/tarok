@@ -25,7 +25,7 @@ const Tournament = () => {
   const navigate = useNavigate();
   return (
     <div className="formCenter">
-      <h1 className="title">Ustvarjanje turnirja</h1>
+      <h1 className="title">Ustvari Turnir</h1>
 
       <form className="formContainer" action="" method="post">
         <div className="inputContainer">
@@ -35,6 +35,7 @@ const Tournament = () => {
             onChange={(event) => {
               setName(event.target.value);
             }}
+            value={name}
           />
         </div>
         <div className="inputContainer">
@@ -44,6 +45,7 @@ const Tournament = () => {
             onChange={(event) => {
               setStart(event.target.value);
             }}
+            value={start}
           />
         </div>
         <div className="inputContainer">
@@ -53,6 +55,7 @@ const Tournament = () => {
             onChange={(event) => {
               setEnd(event.target.value);
             }}
+            value={end}
           />
         </div>
         <div className="inputContainer">
@@ -62,6 +65,7 @@ const Tournament = () => {
             onChange={(event) => {
               setLocation(event.target.value);
             }}
+            value={location}
           />
         </div>
         <div className="inputContainer">
@@ -69,7 +73,9 @@ const Tournament = () => {
             type="button"
             value="Ustvari Turnir"
             onClick={() => {
-              insertDataIntoTable(), navigate("/add-player");
+              insertDataIntoTable();
+              navigate("/add-player");
+              set;
             }}
           />
         </div>

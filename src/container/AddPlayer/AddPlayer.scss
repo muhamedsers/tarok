@@ -29,6 +29,7 @@
       gap: 0.4rem;
       label {
         margin-left: 0.5rem;
+        font-size: 14px;
       }
     }
 
@@ -37,7 +38,7 @@
       box-sizing: border-box;
       border-radius: 8px;
       border: 1px solid $accentColor;
-      background: none;
+      background-color: rgb(14, 13, 13);
       color: white;
     }
 
@@ -54,6 +55,13 @@
       font-weight: 700;
       font-size: 24px;
       margin-top: 1rem;
+      transition: all ease-in-out 0.2s;
+      cursor: pointer;
+    }
+
+    input[type="button"]:hover {
+      transform: scale(1.01);
+      opacity: 75%;
     }
 
     input {

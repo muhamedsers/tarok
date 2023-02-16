@@ -9,3 +9,8 @@ body {
   padding: 0;
   font-family: "Lato", sans-serif;
 }
+
+::-webkit-calendar-picker-indicator {
+  background-color: $accentColor;
+  border-radius: 8px;
+}
