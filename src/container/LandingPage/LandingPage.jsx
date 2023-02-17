@@ -6,6 +6,7 @@ import { useNavigate } from "react-router";
 import NavBar from "../NavBar/NavBar";
 import Footer from "../Footer/Footer";
 import tarok from "../../assets/tarok_slika.jpg";
+import concept from "../../assets/sivo.png";
 
 const LandingPage = () => {
   const navigate = useNavigate();
@@ -27,6 +28,7 @@ const LandingPage = () => {
       </div>
       <div className="conceptContainer">
         <h1 className="title2">Prof of Concept</h1>
+        <img src={concept} alt="" />
       </div>
       <div className="buttonContainer">
         <button
