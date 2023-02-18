@@ -10,7 +10,12 @@
   .conceptContainer {
     margin-top: 2rem;
     margin-bottom: 2rem;
+    img {
+      border-radius: 8px;
+      width: 70rem;
+    }
     .title2 {
+      text-align: center;
       color: white;
       font-size: 38px;
     }
@@ -42,6 +47,8 @@
     }
   }
   .buttonContainer {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     display: flex;
     gap: 1rem;
 
